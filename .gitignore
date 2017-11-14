@@ -11,3 +11,20 @@ node_modules/
 .sass-cache
 css/reveal.min.css
 js/reveal.min.js
+
+package-lock.json
+
+# Swap
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-v][a-z]
+[._]sw[a-p]
+
+# Session
+Session.vim
+
+# Temporary
+.netrwhist
+*~
+# Auto-generated tag files
+tags

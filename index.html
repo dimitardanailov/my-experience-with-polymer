@@ -4,10 +4,10 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Polymer - VarnaLab</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/white.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -23,10 +23,230 @@
 	</head>
 	<body>
 		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
+      <div class="slides">
+        <!-- Slide -->
+        <section>
+          <h1> My experience with Polymer </h1>
+        </section>
+
+        <!-- Slide -->
+        <section data-background-color="#000">
+          <h3>"Angular 2 versus React: There Will Be Blood" - Cory House</h3>
+          <figure>
+            <img width="400" alt="Angular 2 vs React" src="https://cdn-images-1.medium.com/max/1600/1*MRPl_SNuRGJchb6eOAnkSA.jpeg" />
+          </figure>
+          <p>
+            <small>Photo credit: <a href="https://twitter.com/jwcarroll" data-href="https://twitter.com/jwcarroll" class="markup--anchor markup--figure-anchor" rel="noopener" target="_blank">@jwcarrol</a></small>
+          </p>
+        </section>
+
+        <!-- Slide -->
+        <section data-background-color="#000">
+          <figure>
+            <img width="600" src="https://pbs.twimg.com/media/DNB78-zVAAA88QM.jpg" alt="Netflix" title="title"/>
+          </figure>
+        </section>
+
+        <!-- Slide -->
+        <section data-background-color="#000">
+					<blockquote cite="https://www.brainyquote.com/quotes/quotes/l/linustorva367382.html">
+            &ldquo;Frameworks are an abstraction. They make a subset of tasks easier to achieve, in a way that's familiar to other users of the framework. The cost is performance – the overhead of the framework. The key is making the cost worth it.&rdquo; - Jake Archibald
+					</blockquote>
+        </section>
+
+        <!-- Slide -->
+        <section>
+					<h2>Stackoverflow positions and Github</h2>
+					<table>
+						<thead>
+							<tr>
+								<th>Technology</th>
+								<th>Positions</th>
+								<th>Stars</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>React</td>
+								<td>511</td>
+								<td>81,042</td>
+							</tr>
+
+							<tr>
+								<td>Angular</td>
+								<td>257</td>
+								<td>30,000</td>
+							</tr>
+
+							<tr>
+								<td>Vuejs</td>
+								<td>68</td>
+								<td>73,650</td>
+							</tr>
+
+							<tr>
+								<td>Polymer</td>
+								<td>17</td>
+								<td>18,717</td>
+							</tr>
+
+							<tr>
+								<td>Ember</td>
+								<td>52</td>
+								<td>18,423</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+
+        <!-- Slide -->
+        <section>
+          <section>
+            <h2>Stop Sabotaging Your Code…Before You Even Code</h2> 
+          </section>
+        </section>
+
+        <!-- Slide -->
+        <section>
+          <p class="fragment" data-fragment-index="1">1. Draw out your structure with pen and paper or ...</p>
+          <p class="fragment" data-fragment-index="2">2. Write your html first WRITE YOUR HTML FIRST </p>
+          <p class="fragment" data-fragment-index="3">3. Github and Stackoverflow</p>
+          <p class="fragment" data-fragment-index="4">4. TeamWork </p>
+        </section>
+
+        <!-- Slide -->
+        <section data-background-color="#000">
+					<blockquote cite="https://www.brainyquote.com/quotes/quotes/l/linustorva367382.html">
+            &ldquo;Most good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to program.&rdquo; - Linus Torvalds
+					</blockquote>
+        </section>
+
+        <!-- Slide -->
+        <section>
+          <section>
+            <h2>Polymer v1</h2> 
+          </section>
+          <section data-background-color="#000">
+            <pre>
+              <code class="html javascript" data-trim contenteditable style="font-size: 18px;">
+&lt;picture-frame&gt;
+   &lt;img src=&rdquo;jstalks.png&rdquo; alt=&rdquo;jstalks&rdquo; /&gt;
+&lt;/picture-frame&gt;
+              </code>
+            </pre>
+          </section>
+          <section data-background-color="#000">
+            <pre>
+              <code class="html javascript" data-trim contenteditable style="font-size: 18px;">
+&lt;link rel=&rdquo;import&rdquo; href=&quot;https://polygit2.appspot.com/components/polymer/polymer.html&quot;&gt;
+&lt;dom-module id=&rdquo;picture-frame&rdquo;&gt;
+	&lt;template&gt;
+		&lt;style&gt;
+			:host { display: block;  }
+		&lt;/style&gt;
+		&lt;h1&gt;Hello VarnaLab&lt;/h1&gt;
+		&lt;content&gt;&lt;/content&gt;
+	&lt;/template&gt;
+	&lt;script&gt;
+		Polymer({ &lsquo;is&rsquo;: &lsquo;picture-frame&rsquo; })
+	&lt;/script&gt;
+&lt;/dom-module&gt;
+              </code>
+            </pre>
+          </section>
+
+					<section data-background-color="#fff">
+						<figure>
+							<img width="800" alt="Is Polymer the Future of Web Apps?" src="https://3ljhjh2nm8qj3drbt73fe1kz-wpengine.netdna-ssl.com/wp-content/uploads/2016/10/polymer-catalog.png" />
+						</figure>
+						<p>
+							<small>Photo credit: <a href="https://mentormate.com/blog/polymer-vs-angular-future-web-apps/" data-href="https://mentormate.com/blog/polymer-vs-angular-future-web-apps/" class="markup--anchor markup--figure-anchor" rel="noopener" target="_blank">Polymer project</a></small>
+						</p>
+					</section>
+					<section data-background-color="#fff">
+						<figure>
+							<img width="500" alt="Is Polymer the Future of Web Apps?" src="https://3ljhjh2nm8qj3drbt73fe1kz-wpengine.netdna-ssl.com/wp-content/uploads/2016/10/Template-engine-statistics.jpg" />
+						</figure>
+						<p>
+							<small>Photo credit: <a href="https://mentormate.com/blog/polymer-vs-angular-future-web-apps/" data-href="https://mentormate.com/blog/polymer-vs-angular-future-web-apps/" class="markup--anchor markup--figure-anchor" rel="noopener" target="_blank">Polymer summit 2016</a></small>
+						</p>
+					</section>
+        </section>
+
+        <!-- Slide -->
+        <section>
+          <section>
+            <h2>Native Web Components</h2>
+          </section>
+          <section data-background-color="#000">
+            <pre>
+              <code class="javascript" data-trim contenteditable style="font-size: 18px;">
+                // https://w3c.github.io/webcomponents/spec/custom/
+                // https://www.html5rocks.com/en/tutorials/webcomponents/customelements/
+
+                class RadioButton extends HTMLElement {
+                  constructor() {
+                    super();
+                  }
+
+                  connectedCallback() {
+                    this.setAttribute('role', 'radio');
+                    this.setAttribute('tabindex', 0);
+                    this.setAttribute('aria-checked', false);
+                  }
+                }
+
+                // define method has three properties: 1. tag name, 2. Class Name, 3. options
+                window.customElements.define('radio-button', RadioButton, { 'extends': 'radio' });
+              </code>
+            </pre>
+          </section>
+
+        </section>
+
+        <!-- Slide -->
+        <section>
+          <section>
+            <h2>Polymer v2</h2> 
+          </section>
+        </section>
+
+        <!-- Slide -->
+        <section>
+          <section>
+            <h2>My experience</h2> 
+          </section>
+        </section>
+
+        <!-- Slide -->
+        <section>
+          <p class="fragment" data-fragment-index="1">2014 - Polymer 0.5 (Developer preview) </p>
+          <p class="fragment" data-fragment-index="2">2015 - Polymer 1.0</p>
+          <p class="fragment" data-fragment-index="3">2016 - Polymer 2.0</p>
+          <p class="fragment" data-fragment-index="4">2017 - Polymer 3.0</p>
+        </section>
+
+        <!-- Slide -->
+        <section>
+          <section>
+            <h2>Edication for the US Government</h2> 
+          </section>
+        </section>
+
+        <!-- Slide -->
+        <section>
+          <section>
+            <h2>http://bit.ly/mitko-lab-polymer</h2>
+          </section>
+        </section>
+
+        <!-- Slide -->
+        <section>
+          <section>
+            <h2>#UseThePlatform</h2>
+          </section>
+        </section>
+      </div>
 		</div>
 
 		<script src="lib/js/head.min.js"></script>
@@ -37,6 +257,13 @@
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
